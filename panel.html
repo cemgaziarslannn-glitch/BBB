@@ -36,7 +36,7 @@ import { firebaseConfig } from './config.js';
 import { initializeApp } from "https://www.gstatic.com/firebasejs/12.1.0/firebase-app.js";
 import { getDatabase, ref, get } from "https://www.gstatic.com/firebasejs/12.1.0/firebase-database.js";
 
-// Firebase config
+
 
 const app = initializeApp(firebaseConfig);
 const db = getDatabase(app);
@@ -133,7 +133,6 @@ function drawDonut(percent, totalMB){
 // Canlı güncelleme (10 saniye)
 calculateUsage();
 setInterval(calculateUsage, 10000);
-<script src="firebase-init.js"></script>
 </script>
 
 </body>
